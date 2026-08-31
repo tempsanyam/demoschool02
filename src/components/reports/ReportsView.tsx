@@ -71,7 +71,7 @@ export const ReportsView: React.FC = () => {
         csvData += `"${t.employeeId}","${t.name}","${t.designation}","${t.subject}","${t.mobile}","${t.assignedSchoolUdise}","${t.status}"\n`;
       });
     } else {
-      csvData = `Report,GeneratedAt,Context\n"${activeReportId}","${new Date().toLocaleString('hi-IN')}","${selectedSchool?.hindiName || 'सभी 37 विद्यालय'}"\n`;
+      csvData = `Report,GeneratedAt,Context\n"${activeReportId}","${new Date().toLocaleString('hi-IN')}","${selectedSchool?.name || selectedSchool?.hindiName || 'सभी 37 विद्यालय'}"\n`;
     }
 
     const blob = new Blob([csvData], { type: 'text/csv;charset=utf-8;' });
@@ -97,7 +97,7 @@ export const ReportsView: React.FC = () => {
               शासकीय रिपोर्ट एवं विश्लेषणात्मक केंद्र (Official Reports Center)
             </h2>
             <p className="text-xs text-gray-500 dark:text-gray-400">
-              सत्र 2026-27 | {selectedSchool ? `${selectedSchool.hindiName} (${selectedSchool.udise})` : 'समस्त 37 विद्यालय (क्लस्टर मलगुवां)'}
+              सत्र 2026-27 | {selectedSchool ? `${selectedSchool.name || selectedSchool.hindiName} (${selectedSchool.udise})` : 'समस्त 37 विद्यालय (क्लस्टर मलगुवां)'}
             </p>
           </div>
         </div>
@@ -161,7 +161,7 @@ export const ReportsView: React.FC = () => {
                 विकास खंड {institutionConfig.block} • शैक्षिक एवं प्रशासनिक प्रबंधन प्रणाली • सत्र: {institutionConfig.academicSession}
               </p>
               <p className="text-[10px] text-gray-400 mt-0.5">
-                रिपोर्ट जनरेशन दिनांक: {new Date().toLocaleDateString('hi-IN')} | संदर्भ: {selectedSchool ? selectedSchool.hindiName : 'समस्त संकुल'}
+                रिपोर्ट जनरेशन दिनांक: {new Date().toLocaleDateString('hi-IN')} | संदर्भ: {selectedSchool ? (selectedSchool.name || selectedSchool.hindiName) : 'समस्त संकुल'}
               </p>
             </div>
           </div>

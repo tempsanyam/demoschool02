@@ -290,7 +290,7 @@ export const StudentsView: React.FC = () => {
                     </td>
                     <td className="p-3 text-gray-600 dark:text-gray-300">
                       <div className="font-semibold text-gray-800 dark:text-gray-200">
-                        {sObj?.hindiName || st.schoolUdise}
+                        {sObj?.name || sObj?.hindiName || st.schoolUdise}
                       </div>
                       <div className="text-[10px] font-mono text-gray-400">{st.schoolUdise}</div>
                     </td>
@@ -416,7 +416,7 @@ export const StudentsView: React.FC = () => {
                   >
                     {schools.map((s) => (
                       <option key={s.udise} value={s.udise}>
-                        {s.hindiName} ({s.udise})
+                        {s.name || s.hindiName} ({s.udise})
                       </option>
                     ))}
                   </select>

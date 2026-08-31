@@ -41,8 +41,7 @@ export const ExportCenterView: React.FC = () => {
     const headers = [
       'क्र.',
       'यूडाइस कोड',
-      'विद्यालय का नाम (हिंदी)',
-      'अंग्रेजी नाम',
+      'विद्यालय का नाम (School Name)',
       'श्रेणी/प्रकार',
       'ग्राम / मजरा',
       'ग्राम पंचायत',
@@ -52,8 +51,7 @@ export const ExportCenterView: React.FC = () => {
     const rows = schools.map((s, idx) => [
       idx + 1,
       s.udise,
-      s.hindiName,
-      s.name,
+      s.name || s.hindiName,
       s.schoolType,
       s.village,
       s.gramPanchayat,
@@ -148,7 +146,7 @@ export const ExportCenterView: React.FC = () => {
 
     const payload = {
       title: 'जन शिक्षा केंद्र मलगुवां - 16-सूत्रीय भौतिक अधोसंरचना एवं डेफिसिट रिपोर्ट',
-      subtitle: `सत्र ${selectedSession} | विद्यालय: ${selectedUdise === 'ALL' ? 'समस्त संकुल' : activeSchool?.hindiName}`,
+      subtitle: `सत्र ${selectedSession} | विद्यालय: ${selectedUdise === 'ALL' ? 'समस्त संकुल' : (activeSchool?.name || activeSchool?.hindiName)}`,
       headers,
       rows,
       fileName: `Facilities_Report_${selectedUdise}`,
@@ -259,7 +257,7 @@ export const ExportCenterView: React.FC = () => {
               <option value="ALL">★ संपूर्ण संकुल (सभी 37 विद्यालय संकलित)</option>
               {schools.map((s) => (
                 <option key={s.udise} value={s.udise}>
-                  {s.hindiName} ({s.udise})
+                  {s.name || s.hindiName} ({s.udise})
                 </option>
               ))}
             </select>

@@ -414,7 +414,7 @@ export const TeachersView: React.FC = () => {
               <option value="ALL">सभी विद्यालय ({schools.length})</option>
               {schools.map((s) => (
                 <option key={s.udise} value={s.udise}>
-                  {s.hindiName} ({s.udise.slice(-4)})
+                  {s.name || s.hindiName} ({s.udise.slice(-4)})
                 </option>
               ))}
             </select>
@@ -494,7 +494,7 @@ export const TeachersView: React.FC = () => {
                     <div className="flex items-center gap-1.5">
                       <Briefcase className="w-3.5 h-3.5 text-emerald-600 dark:text-emerald-400 shrink-0" />
                       <span className="truncate font-medium text-gray-800 dark:text-gray-200">
-                        {sObj?.hindiName || stf.assignedSchoolUdise}
+                        {sObj?.name || sObj?.hindiName || stf.assignedSchoolUdise}
                       </span>
                     </div>
 
@@ -659,7 +659,7 @@ export const TeachersView: React.FC = () => {
                   >
                     {schools.map((s) => (
                       <option key={s.udise} value={s.udise}>
-                        {s.hindiName} ({s.udise})
+                        {s.name || s.hindiName} ({s.udise})
                       </option>
                     ))}
                   </select>

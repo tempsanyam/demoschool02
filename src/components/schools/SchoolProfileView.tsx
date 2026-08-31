@@ -88,8 +88,7 @@ export const SchoolProfileView: React.FC<SchoolProfileViewProps> = ({
     const headers = ['श्रेणी', 'विवरण / मान'];
     const rows = [
       ['यूडाइस कोड (UDISE)', school.udise],
-      ['विद्यालय का नाम (हिंदी)', school.hindiName],
-      ['अंग्रेजी नाम', school.name],
+      ['विद्यालय का नाम (School Name)', school.name],
       ['शाला श्रेणी / प्रकार', school.schoolType],
       ['ग्राम / मजरा', school.village],
       ['ग्राम पंचायत', school.gramPanchayat],
@@ -104,9 +103,9 @@ export const SchoolProfileView: React.FC<SchoolProfileViewProps> = ({
     ];
 
     exportToExcel({
-      title: `विद्यालय डोजियर: ${school.hindiName}`,
+      title: `विद्यालय डोजियर: ${school.name || school.hindiName}`,
       subtitle: `सत्र 2026-27 | यूडाइस: ${school.udise}`,
-      schoolName: school.hindiName,
+      schoolName: school.name || school.hindiName,
       udise: school.udise,
       headers,
       rows,

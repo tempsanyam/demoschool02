@@ -195,7 +195,7 @@ export const RegisterView: React.FC<RegisterViewProps> = ({ onBackToLogin, onNav
                 >
                   {schools.map((s) => (
                     <option key={s.udise} value={s.udise}>
-                      {s.hindiName || s.name} (UDISE: {s.udise})
+                      {s.name || s.hindiName} (UDISE: {s.udise})
                     </option>
                   ))}
                 </select>

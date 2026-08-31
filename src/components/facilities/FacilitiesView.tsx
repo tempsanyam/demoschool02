@@ -160,7 +160,7 @@ export const FacilitiesView: React.FC = () => {
           >
             {schools.map((s) => (
               <option key={s.udise} value={s.udise}>
-                {s.hindiName} ({s.udise})
+                {s.name || s.hindiName} ({s.udise})
               </option>
             ))}
           </select>

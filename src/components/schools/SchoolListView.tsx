@@ -284,10 +284,10 @@ export const SchoolListView: React.FC<SchoolListViewProps> = ({ onSelectSchool }
                 </div>
 
                 <h3 className="font-bold text-base text-gray-900 dark:text-white group-hover:text-[#0B6B4B] dark:group-hover:text-emerald-400 transition-colors line-clamp-1">
-                  {school.hindiName}
+                  {school.name || school.hindiName}
                 </h3>
                 <p className="text-xs text-gray-500 dark:text-gray-400 line-clamp-1 mt-0.5">
-                  {school.name}
+                  {school.village} • {school.schoolType}
                 </p>
 
                 <div className="mt-3 text-xs space-y-1 text-gray-600 dark:text-gray-300">

@@ -179,7 +179,7 @@ export const MDMView: React.FC = () => {
             <option value="">सभी विद्यालय (क्लस्टर)</option>
             {schools.map((s) => (
               <option key={s.udise} value={s.udise}>
-                {s.hindiName} ({s.udise.slice(-4)})
+                {s.name || s.hindiName} ({s.udise.slice(-4)})
               </option>
             ))}
           </select>
@@ -209,7 +209,7 @@ export const MDMView: React.FC = () => {
                   <tr key={m.id} className="hover:bg-gray-50/80 dark:hover:bg-gray-800/40">
                     <td className="p-3 text-gray-400">{idx + 1}</td>
                     <td className="p-3 font-bold text-gray-900 dark:text-white">
-                      <div>{sObj?.hindiName || m.schoolUdise}</div>
+                      <div>{sObj?.name || sObj?.hindiName || m.schoolUdise}</div>
                       <div className="text-[10px] font-mono text-gray-400">{m.schoolUdise}</div>
                     </td>
                     <td className="p-3 font-medium">{m.date}</td>
@@ -255,7 +255,7 @@ export const MDMView: React.FC = () => {
                 >
                   {schools.map((s) => (
                     <option key={s.udise} value={s.udise}>
-                      {s.hindiName} ({s.udise})
+                      {s.name || s.hindiName} ({s.udise})
                     </option>
                   ))}
                 </select>

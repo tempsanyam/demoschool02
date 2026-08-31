@@ -238,7 +238,7 @@ export const AttendanceView: React.FC = () => {
                   <tr key={rec.id} className="hover:bg-gray-50/80 dark:hover:bg-gray-800/40">
                     <td className="p-3 text-gray-400">{idx + 1}</td>
                     <td className="p-3 font-bold text-gray-900 dark:text-white">
-                      <div>{sObj?.hindiName || rec.schoolUdise}</div>
+                      <div>{sObj?.name || sObj?.hindiName || rec.schoolUdise}</div>
                       <div className="text-[10px] font-mono text-gray-400">{rec.schoolUdise}</div>
                     </td>
                     <td className="p-3">
@@ -295,7 +295,7 @@ export const AttendanceView: React.FC = () => {
                 >
                   {schools.map((s) => (
                     <option key={s.udise} value={s.udise}>
-                      {s.hindiName} ({s.udise})
+                      {s.name || s.hindiName} ({s.udise})
                     </option>
                   ))}
                 </select>

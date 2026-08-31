@@ -152,7 +152,7 @@ export const initialSchools: School[] = [
   {
     udise: '23080100303',
     name: 'HS HIRAPUR',
-    hindiName: 'शासकीय हाई स्कूल हीरापुर',
+    hindiName: 'HS HIRAPUR',
     schoolType: 'हाई स्कूल',
     village: 'हीरापुर',
     gramPanchayat: 'हीरापुर',
@@ -176,7 +176,7 @@ export const initialSchools: School[] = [
   {
     udise: '23080110701',
     name: 'PS JANAKPUR',
-    hindiName: 'प्राथमिक शाला जनकपुर',
+    hindiName: 'PS JANAKPUR',
     schoolType: 'प्राथमिक',
     village: 'जनकपुर',
     gramPanchayat: 'जनकपुर',
@@ -200,7 +200,7 @@ export const initialSchools: School[] = [
   {
     udise: '23080110702',
     name: 'PS KACHHIYAT',
-    hindiName: 'प्राथमिक शाला कछियात',
+    hindiName: 'PS KACHHIYAT',
     schoolType: 'प्राथमिक',
     village: 'कछियात',
     gramPanchayat: 'जनकपुर',
@@ -224,7 +224,7 @@ export const initialSchools: School[] = [
   {
     udise: '23080111001',
     name: 'PS PATTIGANESHJU',
-    hindiName: 'प्राथमिक शाला पट्टी गणेशजू',
+    hindiName: 'PS PATTIGANESHJU',
     schoolType: 'प्राथमिक',
     village: 'पट्टी गणेशजू',
     gramPanchayat: 'पट्टी गणेशजू',
@@ -248,7 +248,7 @@ export const initialSchools: School[] = [
   {
     udise: '23080111102',
     name: 'MS DUBDEI',
-    hindiName: 'माध्यमिक शाला दुबदई',
+    hindiName: 'MS DUBDEI',
     schoolType: 'माध्यमिक',
     village: 'दुबदई',
     gramPanchayat: 'दुबदई',
@@ -272,7 +272,7 @@ export const initialSchools: School[] = [
   {
     udise: '23080111201',
     name: 'PS KHAJRAR',
-    hindiName: 'प्राथमिक शाला खजरार',
+    hindiName: 'PS KHAJRAR',
     schoolType: 'प्राथमिक',
     village: 'खजरार',
     gramPanchayat: 'खजरार',
@@ -296,7 +296,7 @@ export const initialSchools: School[] = [
   {
     udise: '23080111202',
     name: 'MS KHAJRAR',
-    hindiName: 'माध्यमिक शाला खजरार',
+    hindiName: 'MS KHAJRAR',
     schoolType: 'माध्यमिक',
     village: 'खजरार',
     gramPanchayat: 'खजरार',
@@ -320,7 +320,7 @@ export const initialSchools: School[] = [
   {
     udise: '23080111301',
     name: 'PS PATTI BALWANTSINGH',
-    hindiName: 'प्राथमिक शाला पट्टी बलवंतसिंह',
+    hindiName: 'PS PATTI BALWANTSINGH',
     schoolType: 'प्राथमिक',
     village: 'पट्टी बलवंतसिंह',
     gramPanchayat: 'पट्टी बलवंतसिंह',
@@ -344,7 +344,7 @@ export const initialSchools: School[] = [
   {
     udise: '23080111302',
     name: 'PS PURAINIYA',
-    hindiName: 'प्राथमिक शाला पुरैनिया',
+    hindiName: 'PS PURAINIYA',
     schoolType: 'प्राथमिक',
     village: 'पुरैनिया',
     gramPanchayat: 'पट्टी बलवंतसिंह',
@@ -368,7 +368,7 @@ export const initialSchools: School[] = [
   {
     udise: '23080111404',
     name: 'MS HIRAPUR',
-    hindiName: 'माध्यमिक शाला हीरापुर',
+    hindiName: 'MS HIRAPUR',
     schoolType: 'माध्यमिक',
     village: 'हीरापुर',
     gramPanchayat: 'हीरापुर',
@@ -392,7 +392,7 @@ export const initialSchools: School[] = [
   {
     udise: '23080111405',
     name: 'PS PURA KHERA HIRAPUR',
-    hindiName: 'प्राथमिक शाला पुरा खेड़ा हीरापुर',
+    hindiName: 'PS PURA KHERA HIRAPUR',
     schoolType: 'प्राथमिक',
     village: 'पुरा खेड़ा हीरापुर',
     gramPanchayat: 'हीरापुर',
@@ -416,7 +416,7 @@ export const initialSchools: School[] = [
   {
     udise: '23080111406',
     name: 'PS TURKA',
-    hindiName: 'प्राथमिक शाला तुरका',
+    hindiName: 'PS TURKA',
     schoolType: 'प्राथमिक',
     village: 'तुरका',
     gramPanchayat: 'तुरका',
@@ -440,7 +440,7 @@ export const initialSchools: School[] = [
   {
     udise: '23080111408',
     name: 'PS DIGORA',
-    hindiName: 'प्राथमिक शाला दिगौरा',
+    hindiName: 'PS DIGORA',
     schoolType: 'प्राथमिक',
     village: 'दिगौरा',
     gramPanchayat: 'दिगौरा',
@@ -464,7 +464,7 @@ export const initialSchools: School[] = [
   {
     udise: '23080111603',
     name: 'MS SARKAR',
-    hindiName: 'माध्यमिक शाला सरकार',
+    hindiName: 'MS SARKAR',
     schoolType: 'माध्यमिक',
     village: 'सरकार',
     gramPanchayat: 'सरकार',
@@ -488,7 +488,7 @@ export const initialSchools: School[] = [
   {
     udise: '23080111702',
     name: 'MS BANPURA BUZURG',
-    hindiName: 'माध्यमिक शाला बानपुरा बुजुर्ग',
+    hindiName: 'MS BANPURA BUZURG',
     schoolType: 'माध्यमिक',
     village: 'बानपुरा बुजुर्ग',
     gramPanchayat: 'बानपुरा बुजुर्ग',
@@ -512,7 +512,7 @@ export const initialSchools: School[] = [
   {
     udise: '23080111703',
     name: 'PS PURUWA',
-    hindiName: 'प्राथमिक शाला पुरूवा',
+    hindiName: 'PS PURUWA',
     schoolType: 'प्राथमिक',
     village: 'पुरूवा',
     gramPanchayat: 'बानपुरा बुजुर्ग',
@@ -536,7 +536,7 @@ export const initialSchools: School[] = [
   {
     udise: '23080111801',
     name: 'PS BAR',
-    hindiName: 'प्राथमिक शाला बार',
+    hindiName: 'PS BAR',
     schoolType: 'प्राथमिक',
     village: 'बार',
     gramPanchayat: 'बार',
@@ -560,7 +560,7 @@ export const initialSchools: School[] = [
   {
     udise: '23080111902',
     name: 'MS VARME',
-    hindiName: 'माध्यमिक शाला वरमे',
+    hindiName: 'MS VARME',
     schoolType: 'माध्यमिक',
     village: 'वरमे',
     gramPanchayat: 'वरमे',
@@ -584,7 +584,7 @@ export const initialSchools: School[] = [
   {
     udise: '23080113101',
     name: 'PS DARGUWAN JAGIR',
-    hindiName: 'प्राथमिक शाला दरगुवां जागीर',
+    hindiName: 'PS DARGUWAN JAGIR',
     schoolType: 'प्राथमिक',
     village: 'दरगुवां जागीर',
     gramPanchayat: 'दरगुवां',
@@ -608,7 +608,7 @@ export const initialSchools: School[] = [
   {
     udise: '23080113102',
     name: 'PS DHIMROLA',
-    hindiName: 'प्राथमिक शाला धीमरोला',
+    hindiName: 'PS DHIMROLA',
     schoolType: 'प्राथमिक',
     village: 'धीमरोला',
     gramPanchayat: 'दरगुवां',
@@ -632,7 +632,7 @@ export const initialSchools: School[] = [
   {
     udise: '23080113103',
     name: 'PS HB DARGUWAN JAGIR',
-    hindiName: 'प्राथमिक शाला हरिजन बस्ती दरगुवां जागीर',
+    hindiName: 'PS HB DARGUWAN JAGIR',
     schoolType: 'प्राथमिक',
     village: 'दरगुवां जागीर (HB)',
     gramPanchayat: 'दरगुवां',
@@ -656,7 +656,7 @@ export const initialSchools: School[] = [
   {
     udise: '23080113104',
     name: 'GHS DARGUWAN',
-    hindiName: 'शासकीय हाई स्कूल दरगुवां',
+    hindiName: 'GHS DARGUWAN',
     schoolType: 'हाई स्कूल',
     village: 'दरगुवां',
     gramPanchayat: 'दरगुवां',
@@ -680,7 +680,7 @@ export const initialSchools: School[] = [
   {
     udise: '23080113203',
     name: 'PS BANDHIYANPURA',
-    hindiName: 'प्राथमिक शाला बंधियनपुरा',
+    hindiName: 'PS BANDHIYANPURA',
     schoolType: 'प्राथमिक',
     village: 'बंधियनपुरा',
     gramPanchayat: 'बंधियनपुरा',
@@ -704,7 +704,7 @@ export const initialSchools: School[] = [
   {
     udise: '23080113301',
     name: 'PS KACHHIYA KHERA',
-    hindiName: 'प्राथमिक शाला कछिया खेड़ा',
+    hindiName: 'PS KACHHIYA KHERA',
     schoolType: 'प्राथमिक',
     village: 'कछिया खेड़ा',
     gramPanchayat: 'कछिया खेड़ा',
@@ -728,7 +728,7 @@ export const initialSchools: School[] = [
   {
     udise: '23080113302',
     name: 'MS KACHHIYA KHERA',
-    hindiName: 'माध्यमिक शाला कछिया खेड़ा',
+    hindiName: 'MS KACHHIYA KHERA',
     schoolType: 'माध्यमिक',
     village: 'कछिया खेड़ा',
     gramPanchayat: 'कछिया खेड़ा',
@@ -752,7 +752,7 @@ export const initialSchools: School[] = [
   {
     udise: '23080113401',
     name: 'PS MAUNE KA KHERA',
-    hindiName: 'प्राथमिक शाला मौने का खेड़ा',
+    hindiName: 'PS MAUNE KA KHERA',
     schoolType: 'प्राथमिक',
     village: 'मौने का खेड़ा',
     gramPanchayat: 'मौने का खेड़ा',
@@ -776,7 +776,7 @@ export const initialSchools: School[] = [
   {
     udise: '23080113402',
     name: 'MS MAUNE KA KHERA',
-    hindiName: 'माध्यमिक शाला मौने का खेड़ा',
+    hindiName: 'MS MAUNE KA KHERA',
     schoolType: 'माध्यमिक',
     village: 'मौने का खेड़ा',
     gramPanchayat: 'मौने का खेड़ा',
@@ -800,7 +800,7 @@ export const initialSchools: School[] = [
   {
     udise: '23080113403',
     name: 'PS BASENDU',
-    hindiName: 'प्राथमिक शाला बसेन्दु',
+    hindiName: 'PS BASENDU',
     schoolType: 'प्राथमिक',
     village: 'बसेन्दु',
     gramPanchayat: 'बसेन्दु',
@@ -824,7 +824,7 @@ export const initialSchools: School[] = [
   {
     udise: '23080113602',
     name: 'MS MALGUWAN',
-    hindiName: 'माध्यमिक शाला मलग़ुवां',
+    hindiName: 'MS MALGUWAN',
     schoolType: 'माध्यमिक',
     village: 'मलग़ुवां',
     gramPanchayat: 'मलग़ुवां',
@@ -848,7 +848,7 @@ export const initialSchools: School[] = [
   {
     udise: '23080113603',
     name: 'PS DHUVYA',
-    hindiName: 'प्राथमिक शाला धुव्या',
+    hindiName: 'PS DHUVYA',
     schoolType: 'प्राथमिक',
     village: 'धुव्या',
     gramPanchayat: 'मलग़ुवां',
@@ -872,7 +872,7 @@ export const initialSchools: School[] = [
   {
     udise: '23080113605',
     name: 'PS DHIMARWAN',
-    hindiName: 'प्राथमिक शाला धीमरवान',
+    hindiName: 'PS DHIMARWAN',
     schoolType: 'प्राथमिक',
     village: 'धीमरवान',
     gramPanchayat: 'मलग़ुवां',
@@ -896,7 +896,7 @@ export const initialSchools: School[] = [
   {
     udise: '23080113606',
     name: 'PS MAGORIYA',
-    hindiName: 'प्राथमिक शाला मगोरिया',
+    hindiName: 'PS MAGORIYA',
     schoolType: 'प्राथमिक',
     village: 'मगोरिया',
     gramPanchayat: 'मलग़ुवां',
@@ -920,7 +920,7 @@ export const initialSchools: School[] = [
   {
     udise: '23080113607',
     name: 'HS MALGUWAN',
-    hindiName: 'शासकीय हाई स्कूल मलग़ुवां',
+    hindiName: 'HS MALGUWAN',
     schoolType: 'हाई स्कूल',
     village: 'मलग़ुवां',
     gramPanchayat: 'मलग़ुवां',
@@ -944,7 +944,7 @@ export const initialSchools: School[] = [
   {
     udise: '23080113701',
     name: 'PS GARROLI',
-    hindiName: 'प्राथमिक शाला गर्रोली',
+    hindiName: 'PS GARROLI',
     schoolType: 'प्राथमिक',
     village: 'गर्रोली',
     gramPanchayat: 'गर्रोली',
@@ -968,7 +968,7 @@ export const initialSchools: School[] = [
   {
     udise: '23080115206',
     name: 'PRI MAA SARASWATI GM MALGUWAN',
-    hindiName: 'प्राथमिक मां सरस्वती ज्ञान मंदिर मलग़ुवां',
+    hindiName: 'PRI MAA SARASWATI GM MALGUWAN',
     schoolType: 'अशासकीय प्राथमिक',
     village: 'मलग़ुवां',
     gramPanchayat: 'मलग़ुवां',
@@ -992,7 +992,7 @@ export const initialSchools: School[] = [
   {
     udise: '23080115210',
     name: 'PRI VEERANGANA AWANTI KUDILA',
-    hindiName: 'प्राथमिक वीरांगना अवंती कुड़िला',
+    hindiName: 'PRI VEERANGANA AWANTI KUDILA',
     schoolType: 'अशासकीय प्राथमिक',
     village: 'कुड़िला',
     gramPanchayat: 'कुड़िला',
@@ -1016,7 +1016,7 @@ export const initialSchools: School[] = [
   {
     udise: '23084101366',
     name: 'SARSWATI SHISHU MANDIR BANPURA BUJURG',
-    hindiName: 'सरस्वती शिशु मंदिर बानपुरा बुजुर्ग',
+    hindiName: 'SARSWATI SHISHU MANDIR BANPURA BUJURG',
     schoolType: 'अशासकीय प्राथमिक',
     village: 'बानपुरा बुजुर्ग',
     gramPanchayat: 'बानपुरा बुजुर्ग',

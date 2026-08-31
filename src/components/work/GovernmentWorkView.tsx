@@ -249,7 +249,7 @@ export const GovernmentWorkView: React.FC = () => {
                   {w.workName}
                 </h3>
                 <p className="text-xs text-gray-500 dark:text-gray-400 mt-0.5">
-                  विभाग: {w.department} | विद्यालय: {sObj?.hindiName || w.schoolUdise}
+                  विभाग: {w.department} | विद्यालय: {sObj?.name || sObj?.hindiName || w.schoolUdise}
                 </p>
 
                 {/* Progress bar */}
@@ -356,7 +356,7 @@ export const GovernmentWorkView: React.FC = () => {
                   >
                     {schools.map((s) => (
                       <option key={s.udise} value={s.udise}>
-                        {s.hindiName} ({s.udise.slice(-4)})
+                        {s.name || s.hindiName} ({s.udise.slice(-4)})
                       </option>
                     ))}
                   </select>

@@ -208,7 +208,7 @@ export const DocumentsView: React.FC = () => {
                   {school ? (
                     <p className="text-[11px] text-gray-500 dark:text-gray-400 flex items-center gap-1">
                       <Building2 className="w-3 h-3 text-[#0B6B4B]" />
-                      <span className="truncate">{school.hindiName || school.name}</span>
+                      <span className="truncate">{school.name || school.hindiName}</span>
                     </p>
                   ) : (
                     <p className="text-[11px] text-gray-500 dark:text-gray-400 flex items-center gap-1">
@@ -391,7 +391,7 @@ export const DocumentsView: React.FC = () => {
                     <option value="ALL">समस्त संकुल / सामान्य</option>
                     {schools.map((s) => (
                       <option key={s.udise} value={s.udise}>
-                        {s.hindiName || s.name}
+                        {s.name || s.hindiName}
                       </option>
                     ))}
                   </select>

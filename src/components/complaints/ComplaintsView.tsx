@@ -276,7 +276,7 @@ export const ComplaintsView: React.FC = () => {
                   <div className="flex justify-between">
                     <span className="text-gray-500">विद्यालय:</span>
                     <span className="font-bold text-gray-800 dark:text-gray-200">
-                      {sObj?.hindiName || c.schoolUdise}
+                      {sObj?.name || sObj?.hindiName || c.schoolUdise}
                     </span>
                   </div>
                   <div className="flex justify-between">
@@ -390,7 +390,7 @@ export const ComplaintsView: React.FC = () => {
                 >
                   {schools.map((s) => (
                     <option key={s.udise} value={s.udise}>
-                      {s.hindiName} ({s.udise})
+                      {s.name || s.hindiName} ({s.udise})
                     </option>
                   ))}
                 </select>

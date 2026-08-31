@@ -144,7 +144,7 @@ export const DataProvider: React.FC<{ children: React.ReactNode }> = ({ children
   const { currentUser } = useAuth();
 
   const DB_VERSION_KEY = 'jsk_db_version';
-  const CURRENT_DB_VERSION = 'v2026_tikamgarh_baldeogarh_v1';
+  const CURRENT_DB_VERSION = 'v2026_tikamgarh_baldeogarh_v2_english_schools';
 
   // Primary state collections with persistent localStorage storage
   const [schools, setSchools] = useState<School[]>(() => {
@@ -478,9 +478,9 @@ export const DataProvider: React.FC<{ children: React.ReactNode }> = ({ children
       lastInspectionDate: new Date().toISOString().split('T')[0],
     }));
     setFacilities((prev) => [...prev, ...newFacilities]);
-    logActivity('CREATE', 'Schools', `नया विद्यालय जोड़ा गया: ${school.hindiName} (${school.udise})`, {
+    logActivity('CREATE', 'Schools', `नया विद्यालय जोड़ा गया: ${school.name || school.hindiName} (${school.udise})`, {
       recordId: school.udise,
-      recordName: school.hindiName,
+      recordName: school.name || school.hindiName,
       schoolUdise: school.udise,
       newValue: school,
     });
@@ -489,9 +489,9 @@ export const DataProvider: React.FC<{ children: React.ReactNode }> = ({ children
   const updateSchool = (school: School) => {
     const old = schools.find((s) => s.udise === school.udise);
     setSchools((prev) => prev.map((s) => (s.udise === school.udise ? school : s)));
-    logActivity('UPDATE', 'Schools', `विद्यालय विवरण अद्यतन किया गया: ${school.hindiName}`, {
+    logActivity('UPDATE', 'Schools', `विद्यालय विवरण अद्यतन किया गया: ${school.name || school.hindiName}`, {
       recordId: school.udise,
-      recordName: school.hindiName,
+      recordName: school.name || school.hindiName,
       schoolUdise: school.udise,
       oldValue: old,
       newValue: school,
@@ -501,9 +501,9 @@ export const DataProvider: React.FC<{ children: React.ReactNode }> = ({ children
   const deleteSchool = (udise: string) => {
     const target = schools.find((s) => s.udise === udise);
     setSchools((prev) => prev.filter((s) => s.udise !== udise));
-    logActivity('DELETE', 'Schools', `विद्यालय हटाया गया: ${target?.hindiName || udise}`, {
+    logActivity('DELETE', 'Schools', `विद्यालय हटाया गया: ${target?.name || target?.hindiName || udise}`, {
       recordId: udise,
-      recordName: target?.hindiName,
+      recordName: target?.name || target?.hindiName,
       schoolUdise: udise,
       oldValue: target,
     });
